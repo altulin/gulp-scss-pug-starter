@@ -8,7 +8,7 @@ const { cleanFavicons } = clean;
 
 const {
   favicons,
-  del,
+  deleteAsync,
   gulp: { src, dest },
 } = pluginsObject;
 
@@ -53,7 +53,7 @@ export const delFavicons = () => {
   const mstile = `${folderFavicons}mstile-{70x70,144x144,310x150,310x310}.png`;
   const delList = [android, apple, precomposed, favicon, mstile];
 
-  return del(delList, { force: true });
+  return deleteAsync(delList, { force: true });
 };
 
 export default createFavicons;
