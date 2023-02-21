@@ -1,7 +1,7 @@
 
 mixin svg(name)
   - const sprite = `${baseDir}img/sprite.svg`
-  svg&attributes({'class': 'bar'}) // {'class': 'bar'} viewBox нужен для адаптивности
+  svg&attributes(attributes) //-  viewBox нужен для адаптивности
     use(xlink:href= `${sprite}#${name}`)
 
 
