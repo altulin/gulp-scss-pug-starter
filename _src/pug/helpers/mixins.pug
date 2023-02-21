@@ -4,6 +4,8 @@ mixin svg(name)
   svg&attributes(attributes) //-  viewBox нужен для адаптивности
     use(xlink:href= `${sprite}#${name}`)
 
+//-  +svg('point')(class="fghfg")
+
 
 //- +img-retina(``, ``, ``, ``, ``, ``)
 mixin img-retina(name, type, alt, className, width, height, ...args)
