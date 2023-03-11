@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.2",
     "browser-sync": "^2.27.11",
@@ -44,6 +45,7 @@
     "gulp-zip": "^5.1.0",
     "minimist": "^1.2.7",
     "sass": "^1.57.1",
+    "webpack": "^5.76.1",
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {

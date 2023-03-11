@@ -1,6 +1,3 @@
-import "./vendor.js";
-// import MmenuLight from "mmenu-light";
+const handler = () => {};
 
-// import addEventResize from "./modules/resize.js";
-
-// addEventResize();
+document.addEventListener("DOMContentLoaded", handler);
