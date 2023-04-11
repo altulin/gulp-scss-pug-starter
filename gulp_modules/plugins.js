@@ -30,6 +30,8 @@ import stream from "merge-stream";
 import ttf2woff from "gulp-ttf2woff";
 import ttf2woff2 from "gulp-ttf2woff2";
 import favicons from "gulp-favicons";
+// import footer from "gulp-footer";
+import fs from "fs";
 
 const sass = gulpSass(dartSass);
 
@@ -68,6 +70,8 @@ const pluginsObject = {
   ttf2woff,
   ttf2woff2,
   favicons,
+  fs,
+  // footer,
 };
 
 export default pluginsObject;

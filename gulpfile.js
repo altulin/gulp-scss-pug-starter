@@ -11,7 +11,7 @@ import getWatchers from "./gulp_modules/watch.js";
 import transformPug from "./gulp_modules/pug.js";
 import getCopying from "./gulp_modules/copying.js";
 import creteArchive from "./gulp_modules/archiving.js";
-// import createFavicons, { delFavicons } from "./gulp_modules/favicons.js";
+import { createSection } from "./gulp_modules/createSection.js";
 
 const { parallel, series } = pluginsObject.gulp;
 const { delDistFolder, cleanImg, cleanZip, cleanHtml, cleanCss } = cleanTools;
@@ -43,6 +43,6 @@ const production = series(
   series(getCopying, creteArchive)
 );
 
-// const test = series(createFavicons, delFavicons);
+const section = series(createSection);
 
-export { development, production };
+export { development, production, section };

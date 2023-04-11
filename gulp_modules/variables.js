@@ -165,6 +165,13 @@ const paths = {
     webpFolder: `${srcFolder}/img/webp/`,
     sassFile: `${srcFolder}/sass/style.scss`,
   },
+  section: {
+    pug: `${srcFolder}/pug/sections`,
+    index: `${srcFolder}/pug/pages/index.pug`,
+    sass: `${srcFolder}/sass/blocks`,
+    style: `${srcFolder}/sass/style.scss`,
+    scriptSection: "gulp_modules/createSection.js",
+  },
   distFolder,
   srcFolder,
   distFolderZip,
