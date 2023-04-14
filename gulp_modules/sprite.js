@@ -27,6 +27,7 @@ const createSprite = () => {
       svgmin({
         js2svg: {
           pretty: true,
+          indent: 2,
         },
       })
     )
@@ -42,13 +43,20 @@ const createSprite = () => {
       })
     )
 
-    .pipe(replace("&gt;", ">"))
-
     .pipe(
       svgstore({
         inlineSvg: true,
       })
     )
+
+    .pipe(replace("&gt;", ">"))
+    .pipe(replace("><defs", ">\n\t<defs"))
+    .pipe(replace("><symbol", ">\n\t<symbol"))
+    .pipe(replace("</symbol>", "\t</symbol>"))
+    .pipe(replace("<path", "\t<path"))
+    .pipe(replace("<g", "\t<g"))
+    .pipe(replace("</g>", "\t</g>"))
+    .pipe(replace("></svg", ">\n</svg"))
 
     .pipe(rename(spriteFile))
     .pipe(dest(imgFolder));
