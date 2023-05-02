@@ -9,7 +9,7 @@ const browserSync = () => {
     server: { baseDir: srcFolder }, // Указываем папку сервера
     notify: false, // Отключаем уведомления
     online: true, // Режим работы: true или false
-    open: false,
+    open: true,
     port: 3000,
   });
 };

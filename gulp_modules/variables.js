@@ -1,6 +1,6 @@
 import pluginsObject from "./plugins.js";
 
-const projectName = `template`; // название проекта
+const projectName = "dist"; // название проекта
 export const projectNameRu = `шаблон`; // название проекта
 const distFolder = `${projectName}`; // Папка продакшн
 const distFolderZip = "*.zip";

@@ -485,26 +485,4 @@ button {
   padding-left: 15px;
   max-width: 1350px;
 }
-
-.header {
-  padding-top: calc(1.75rem + 6vw);
-}
-
-.header__logo {
-  display: block;
-  width: 200px;
-  height: 100px;
-  background-color: tomato;
-}
-
-.header__logo:hover,
-.header__logo:focus {
-  background-color: green;
-}
-
-@media (min-width: 1200px) {
-  .header {
-    padding-top: 6.25rem;
-  }
-}
 /*# sourceMappingURL=style.css.map */
