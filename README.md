@@ -2,11 +2,11 @@
 
 # gulp-scss-pug-starter
 
-![License](https://img.shields.io/github/license/altulin/gulp-scss-pug-starter)
+<!-- ![License](https://img.shields.io/github/license/altulin/gulp-scss-pug-starter) -->
 
-<a href="https://qiwi.com/n/ALTULIN">
+<!-- <a href="https://qiwi.com/n/ALTULIN" target="_blank">
 	<img src="https://img.shields.io/badge/%D0%92%D0%9D%D0%95%D0%A1%D0%A2%D0%98%20%D0%94%D0%9E%D0%9D%D0%90%D0%A2-QIWI-red">
-</a>
+</a> -->
 
 ## Используемые технологии
 
@@ -19,7 +19,7 @@
 - [Browsersync](https://www.browsersync.io/), автоматическое обновление страницы при разработке
 - используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
 - генерация иконки сайта в адресную строку браузера (favicon)
-- Возможность быстро создать архив проекта
+- возможность быстро создать архив проекта
 
 ## Начало работы
 
@@ -29,7 +29,7 @@
 - перейдите в папку со сборкой: `cd gulp-scss-pug-starter`
 - установите все зависимости: `npm i`
 - вводим команду `npm start` и можно приступать к работе.
-- Для сборки проекта требуется команда: `npm run build`
+- для сборки проекта требуется команда: `npm run build`
 
 ## Структура папок и файлов
 
@@ -157,6 +157,6 @@ gulp-scss-pug-starter
 
 ---
 
-<a href="https://qiwi.com/n/ALTULIN">
+<!-- <a href="https://qiwi.com/n/ALTULIN" target="_blank">
 	<img src="https://img.shields.io/badge/%D0%92%D0%9D%D0%95%D0%A1%D0%A2%D0%98%20%D0%94%D0%9E%D0%9D%D0%90%D0%A2-QIWI-red">
-</a>
+</a> -->
