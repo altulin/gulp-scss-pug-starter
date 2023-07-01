@@ -383,11 +383,11 @@ template {
 }
 
 @font-face {
+  font-weight: 400;
+  font-family: Gilroy;
+  font-style: normal;
   src: url("/fonts/Gilroy-Regular.woff2") format("woff2");
   src: url("/fonts/Gilroy-Regular.woff") format("woff");
-  font-family: Gilroy;
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
 }
 
@@ -415,8 +415,8 @@ body {
           flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background-color: #ffffff;
   color: #202020;
+  background-color: #fff;
 }
 
 a {
@@ -424,8 +424,8 @@ a {
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 svg {
@@ -463,8 +463,8 @@ div {
 }
 
 fieldset {
-  border: none;
   padding: 0;
+  border: none;
 }
 
 button:focus,
@@ -474,15 +474,37 @@ a:focus {
 }
 
 button {
-  border: none;
   padding: 0;
+  border: none;
 }
 
 .container {
+  max-width: 1350px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  max-width: 1350px;
+}
+
+.header {
+  padding-top: calc(1.75rem + 6vw);
+}
+
+.header__logo {
+  display: block;
+  width: 200px;
+  height: 50px;
+  background-color: tomato;
+}
+
+.header__logo:hover,
+.header__logo:focus {
+  background-color: green;
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding-top: 6.25rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
