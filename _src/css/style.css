@@ -467,7 +467,6 @@ fieldset {
   border: none;
 }
 
-button:focus,
 input:focus,
 a:focus {
   outline: none;
@@ -476,6 +475,10 @@ a:focus {
 button {
   padding: 0;
   border: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 .container {
