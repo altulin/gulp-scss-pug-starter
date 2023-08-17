@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: inherit;
+
   // min-height: 0;
   // min-width: 0;
 }
@@ -18,8 +19,8 @@ body {
   flex-direction: column;
   width: 100%;
   min-height: 100vh;
-  background-color: $bg;
   color: $text-dark;
+<<<<<<< HEAD
 
   &::-webkit-scrollbar {
     width: 0.8rem;
@@ -33,6 +34,9 @@ body {
     background: rgb(255 255 255 / 50%);
     border-radius: 0.2rem;
   }
+=======
+  background-color: $bg;
+>>>>>>> 4e74c5a0d83c8b593dae6d57dedcd42a9f22a2f6
 }
 
 a {
@@ -40,8 +44,8 @@ a {
 }
 
 img {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 svg {
@@ -75,15 +79,14 @@ a,
 textarea,
 label,
 div {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
 }
 
 fieldset {
-  border: none;
   padding: 0;
+  border: none;
 }
 
-button,
 input,
 a {
   &:focus {
@@ -92,8 +95,12 @@ a {
 }
 
 button {
-  border: none;
   padding: 0;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 input:-webkit-autofill,
@@ -104,11 +111,11 @@ input:-webkit-autofill:active {
 }
 
 .container {
+  max-width: $width-dt + $gap * 2;
   margin-right: auto;
   margin-left: auto;
   padding-right: $gap;
   padding-left: $gap;
-  max-width: $width-dt + $gap * 2;
 }
 
 // * {
