@@ -20,6 +20,19 @@ body {
   min-height: 100vh;
   background-color: $bg;
   color: $text-dark;
+
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #1a5632;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(255 255 255 / 50%);
+    border-radius: 0.2rem;
+  }
 }
 
 a {
